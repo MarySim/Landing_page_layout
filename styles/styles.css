@@ -1,0 +1,1301 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* Основные контейнеры */
+.container {
+    max-width: 1171px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+/* Кнопки */
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px 0px #E3B87333;
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 161px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.button--transparent {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+}
+
+/* Шапка */
+.header {
+    background-color: #131313;
+    position: relative;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    max-width: 1438px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+}
+
+.header-navigation__item:last-child {
+    margin-right: 0;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    color: #E3B873;
+    text-decoration: underline;
+    margin-right: 45px;
+    font-size: 14px;
+}
+
+/* Секция Hero */
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 707px;
+    padding-top: 194px;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__content {
+    max-width: 676px; 
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero__title span {
+    color: #E3B873;
+}
+
+.hero__text {
+    font-size: 22px;
+    line-height: 1.64;
+    color: #FFFFFF;
+    max-width: 504px;
+    margin-top: 22px;
+    margin-bottom: 41px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__buttons .button {
+    width: 207px;
+    height: 51px;
+}
+
+.projects {
+    background-color: #131313;
+    padding-top: 107px;
+    padding-bottom: 0; 
+    position: relative;
+}
+
+.projects__info {
+    width: 442px;
+    flex-shrink: 0;
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-family: 'Yeseva One', 'Times New Roman', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects__title {
+    font-size: 27px;
+    line-height: 1.39;
+    letter-spacing: -0.07em;
+    margin: 0;
+}
+
+.projects__description {
+    color: #FFFFFF;
+    font-size: 14px; 
+    line-height: 2; 
+    margin-top: 34px;
+    margin-bottom: 42px;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 34px; 
+    column-gap: 29px; 
+    margin-bottom: 80px;
+}
+
+.projects__item-title {
+    font-family: 'Yeseva One', serif;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin: 0 0 9px 0;
+    font-size: 18px; 
+}
+
+.projects__item-value {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 13px; 
+    line-height: 1.5;
+}
+
+.projects__visual {
+    width: 679px;
+    flex-shrink: 0;
+}
+
+.projects__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 45px 0;
+    gap: 60px;
+}
+
+.projects__menu-item {
+    font-family: 'Yeseva One', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.projects__menu-item--active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873; 
+    padding-bottom: 7px;
+}
+
+.projects__image {
+    width: 100%;
+    height: 482px;
+    object-fit: cover;
+    display: block;
+}
+
+.projects__navigation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: auto;
+}
+
+.projects__arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__pagination {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.projects__dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.projects__dot--active {
+    background-color: #FFFFFF;
+}
+
+.control {
+    background: linear-gradient(to bottom, #131313 442px, #FFFFFF 442px);
+    padding-top: 130px; /* Опускаем заголовок на место */
+    padding-bottom: 120px;
+    margin-top: 0; /* Убираем отрицательный отступ, который ломал верстку */
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+
+.control-container {
+    max-width: 817px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control__title {
+    margin: 0;
+    font-family: 'Yeseva One', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.control__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 13px;
+    margin-bottom: 31px;
+}
+
+.control__line {
+    width: 32px;
+    height: 1.5px;
+    background-color: #E3B873;
+}
+
+.control__video {
+    position: relative;
+    width: 100%;
+    height: 434px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 62px;
+}
+
+.control__video-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.control__video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.control__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.control__text-line {
+    width: 55px;
+    height: 1.5px;
+    background-color: #E3B873;
+    margin-bottom: 34px;
+}
+
+.control__text {
+    max-width: 681px;
+    font-size: 18px;
+    line-height: 2.05;
+    color: #363636;
+    text-align: center;
+    margin: 0;
+}
+
+.control__form {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control__form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 50px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.control__input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.control__input-group label {
+    font-size: 13px;
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 7px;
+}
+
+.control__input-group input {
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding: 8px 0;
+    font-size: 14px;
+    color: #363636;
+    outline: none;
+}
+
+.control__form-btn {
+    background-color: #E3B873;
+    color: #FFFFFF;
+    border: none;
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+}
+
+.control__checkbox-label {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #181818;
+    gap: 8px;
+}
+
+/* ==========================================================================
+   СЕКЦИЯ TYPES OF REPAIR (ФИКС ОДИНАКОВЫХ РАМОК И ВЫРАВНИВАНИЯ ОПИСАНИЙ)
+   ========================================================================== */
+.repair-types {
+    padding-top: 30px;
+    padding-bottom: 140px; 
+    background-color: #FFFFFF;
+}
+
+.repair-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin: 0 0 13px 0;
+}
+
+.repair-icon {
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.repair-types__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 13px;
+    margin-bottom: 31px;
+}
+
+.repair-types__line {
+    width: 32px;
+    height: 1.5px;
+    background-color: #E3B873;
+    border-radius: 30px;
+}
+
+.repair-types__icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.repair-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+.repair-card {
+    flex: 1;
+    position: relative;
+}
+
+/* Создаем жесткую одинаковую рамку для изображений */
+.card-image {
+    width: 100%;
+    height: 421px; /* Фиксированная высота рамки как на макете */
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Спасает вытянутое второе фото, обрезая лишнее по краям */
+    display: block;
+}
+
+/* Описания теперь всегда на одной стартовой линии, так как высоты картинок равны */
+.card-content {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    width: 85%;
+    margin: -127px auto 0 auto; /* Наплыв плашки на картинку */
+    position: relative;
+    padding: 25px 30px 49px 34px;
+    z-index: 2;
+}
+
+.card-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #363636;
+    margin: 0 0 13px 0;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-list li {
+    font-size: 15px;
+    line-height: 1.91;
+    color: #959595;
+    position: relative;
+    padding-left: 14px;
+}
+
+.card-list li::before {
+    content: "•";
+    color: #E3B873; 
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.card-price {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    background: #E3B873;
+    color: #FFFFFF;
+    font-family: 'Yeseva One', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 17px 18px;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    white-space: nowrap;
+}
+
+/* Фоновая картинка скетча */
+.measurement-bg {
+    position: absolute;
+    left: -150px; /* Сдвигаем влево, как в Фигме. Можешь менять это значение (-100, -200) */
+    top: 50px;
+    z-index: -1; /* Прячем картинку ПОД контент */
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Отступ от кружка до текста */
+}
+
+/* Универсальный кружок для цифр и свинки */
+.step-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #E3B873; /* Наш фирменный золотой */
+    color: #FFFFFF;
+    font-family: 'Yeseva One', serif;
+    font-size: 18px;
+}
+
+.step-text {
+    font-size: 14px;
+    color: #363636;
+    line-height: 1.5;
+}
+
+.measurement {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.measurement::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/sketch-bg.jpg'); 
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: -1;
+    opacity: 0.3; 
+}
+
+.measurement-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.measurement-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 509px;
+    box-sizing: border-box;
+}
+
+.suite-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0; /* Обнуляем маргины, чтобы space-between считал расстояние идеально */
+}
+
+.suite-step__number {
+    background-color: #E3B873;
+    color: #FFFFFF;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.suite-step__text {
+    font-size: 14px;
+    color: #363636;
+    margin: 0;
+}
+
+.measurement-form-wrapper {
+    width: 506px;
+    display: flex;
+    flex-direction: column;
+}
+
+.measurement-form {
+    background-color: #131313;
+    width: 506px;
+    height: 509px;
+    padding: 30px 49px 30px 49px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.measurement-form__title {
+    color: #ffffff !important; /* Принудительно делаем ярко-белым, чтобы не сливался */
+    font-family: 'Nunito', sans-serif; /* Или твой шрифт */
+    font-size: 18px; /* Настрой размер под макет */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Уменьшили с 25px, чтобы сберечь высоту */
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.form-input::placeholder {
+    color: #FFFFFF;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: #E3B873;
+}
+
+/* Пункт 1: Стили чекбокса (Текст теперь белый и не теряется на темном фоне) */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Уменьшили, давая место кнопке */
+}
+
+.form-checkbox input {
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    color: #FFFFFF; 
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: auto; /* Удерживает кнопку строго внизу черной формы */
+}
+
+.form-button {
+    width: 213px;
+    height: 51px;
+}
+
+.measurement-form .form-button {
+    width: 213px; 
+    height: 51px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #E3B873;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    transition: background-color 0.2s;
+}
+
+.measurement-form .form-button:hover {
+    background-color: #cda25f;
+}
+
+.piggy-badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.piggy-button {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piggy-text {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #E3B873;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+
+
+.fantasies {
+    position: relative;
+    /* ОТСТУП ОТ ПРЕДЫДУЩЕЙ СЕКЦИИ: 
+       Делаем приличный запас, чтобы темный фон не прилипал к свинке, 
+       а у вылезающих вверх картинок было свободное белое пространство */
+    margin-top: 150px; 
+    padding: 0; /* Обнуляем внутренние паддинги секции */
+}
+
+/* Фиксированный фон 1440x864, отцентрированный позади контента */
+.fantasies-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Растянется до самого конца секции, закрыв белый зазор */
+    
+    /* Прописали правильную папку images (обрати внимание, что у этого файла название через дефис, как у тебя на скрине) */
+    background-image: url('../images/fantasies-bg.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.fantasies-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.fantasies-container {
+    position: relative;
+    z-index: 2;
+    /* УБЕДИСЬ, ЧТО ЗДЕСЬ НЕТ СТРОКИ height: 864px; (удали её, если осталась) */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.fantasies-content {
+    width: 45%; /* Чуть расширили, чтобы тексту было комфортно с новым отступом */
+    padding-left: 50px;    /* Точно 99px от левого края */
+    padding-top: 137px;    /* Отступ сверху */
+    padding-bottom: 97px;  /* Отступ снизу. Теперь фон гарантированно продлится сюда! */
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.fantasies-title {
+    color: #E3B873;
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 139%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 45px; /* Аккуратный отступ до начала списка */
+}
+
+.fantasies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.fantasies-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 191%;
+    letter-spacing: 0;
+    transition: color 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.fantasies-link:hover {
+    color: #E3B873;
+}
+
+.fantasies-link--active {
+    color: #E3B873;
+}
+
+.fantasies-link--active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #E3B873;
+}
+
+.fantasies-gallery {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.gallery-col {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.gallery-col-1 {
+    transform: translateY(-30px); /* Левая колонка аккуратно выходит вверх */
+}
+
+.gallery-col-2 {
+    transform: translateY(-90px); /* Правая колонка вылетает сильнее */
+}
+
+.gallery-img {
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.img-1 { width: 353px; height: 556px; }
+.img-2 { width: 354px; height: 349px; }
+.img-3 { width: 354px; height: 275px; }
+.img-4 { width: 354px; height: 624px; }
+
+
+
+
+.clients {
+    padding: 100px 0 220px 0; 
+    background-color: #ffffff;
+}
+
+.clients-heading {
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.clients-title {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #181818;
+    text-transform: uppercase;
+    margin: 0 0 13px 0;
+}
+
+.clients-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрируем линии и картинку по вертикали */
+    gap: 15px; /* Расстояние между линиями и иконкой (можешь поправить под макет) */
+    margin-bottom: 24px;
+}
+
+.clients-icon::before,
+.clients-icon::after {
+    content: '';
+    display: block;
+    width: 32px; /* Длина линии */
+    height: 1px; /* Идеальная толщина в 1 пиксель */
+    background-color: #E3B873; /* Тот самый золотой цвет */
+}
+
+.clients-subtitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 164%;
+    color: #363636;
+    margin: 0;
+}
+
+/* ==========================================================================
+   СЕТКА И КАРТОЧКИ (Flexbox и точные размеры)
+   ========================================================================== */
+.clients-grid {
+    display: flex;
+    justify-content: center;
+    gap: 54px; /* Твое точное расстояние между карточками */
+}
+
+.client-card {
+    width: 376px; /* Твоя точная ширина карточки */
+    
+    /* Делаем относительное позиционирование, чтобы потом "приклеить" кнопки вниз */
+    position: relative; 
+    
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); /* Легкая тень, как в Figma */
+    
+    /* Твои размеры! Отступы от краев до контента отзыва:
+       Слева: 20px
+       Справа: 31px
+       Снизу: 67px
+       Сверху: 0 (верхний отступ мы распределим между шапкой и текстом) */
+    padding: 0 31px 67px 20px; 
+}
+
+/* ==========================================================================
+   ВНУТРЕННОСТИ КАРТОЧКИ: Шапка и Текст
+   ========================================================================== */
+.client-header {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    /* Если аватарка ~76px высотой, то 24px отступа сверху + 76px аватарки + 22px 
+       отступа до текста = ровно 122px от верхнего края карточки до текста! */
+    padding-top: 24px; 
+    margin-bottom: 22px; 
+}
+
+.client-avatar {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-name {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 127%;
+    color: #181818;
+    margin: 0;
+}
+
+.client-review {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+    margin: 0;
+}
+
+/* ==========================================================================
+   КНОПКИ С МЕТРИКАМИ (Золотые плашки)
+   ========================================================================== */
+.client-metrics {
+    /* Абсолютно позиционируем их в левом нижнем углу */
+    position: absolute;
+    left: 0;
+    /* Выдвигаем их вниз за пределы карточки наполовину (-27px). 
+       Это и даст ту самую общую высоту в 455px (высота карточки + вылет) */
+    bottom: -27px; 
+    
+    display: flex;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.3); /* Тень от золотой кнопки */
+}
+
+.metric-item {
+    background-color: #E3B873;
+    padding: 11px 17px; /* Внутренние отступы кнопок, подправь, если в фигме другие */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-right: 1px solid #FFFFFF; /* Белая полоса-разделитель между кнопками */
+}
+
+/* Убираем полоску у последней кнопки */
+.metric-item:last-child {
+    border-right: none;
+}
+
+.metric-text {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 139%;
+    color: #FFFFFF;
+}
+
+
+
+
+/* contacts section */
+/* contacts section */
+.contacts-section {
+    position: relative;
+    z-index: 5;
+    padding-top: 1px; /* классический хак против cancellation отступов */
+    
+    /* Задаем темный фон и смешиваем его с картинкой для затемнения */
+    background-color: #000000d8; 
+    background-image: url('../images/contacts-bg.jpg');
+    background-blend-mode: multiply; 
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 66px;
+}
+
+/* questions card */
+.questions-card {
+    max-width: 883px;
+    width: 100%;
+    height: 445px;
+    background-color: #181818;
+    margin: -101px auto 0; /* наезд на предыдущую секцию */
+    padding: 34px 104px; 
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.questions-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 45px 0;
+}
+
+/* form elements */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 58px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-full {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 3px;
+}
+
+.form-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+/* custom checkbox */
+.form-policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 35px;
+}
+
+.policy-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.policy-checkbox:checked {
+    background-color: #E3B873;
+}
+
+.policy-checkbox:checked::after {
+    content: '';
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+}
+
+.policy-label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* submit button */
+.questions-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #E3B873;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    padding: 18px 85px;
+    cursor: pointer;
+    box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+    transition: background 0.2s;
+}
+
+.questions-btn:hover {
+    background-color: #cd9f55;
+}
+
+/* address & socials */
+.contacts-info {
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.contacts-address {
+    font-family: 'Yeseva One', serif;
+    font-size: 20px;
+    line-height: 1.43;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0 0 26px 0;
+    padding-top: 40px;
+}
+
+.contacts-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 14px;
+    height: 14px;
+}
+
+/* map */
+.contacts-map {
+    max-width: 925px;
+    margin: 0 auto;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.map-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
