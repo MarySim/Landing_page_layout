@@ -1,20 +1,20 @@
 const slides = [
     {
-        img: "images/projects_1.jpg",
+        img: "images/projects_1.svg",
         city: "Rostov-on-Don<br>LCD admiral",
         area: "81 m2",
         time: "3.5 months",
         cost: "Upon request"
     },
     {
-        img: "images/projects_2.jpg", 
+        img: "images/projects_2.svg", 
         city: "Sochi<br>Thieves",
         area: "105 m2",
         time: "4 months",
         cost: "Upon request"
     },
     {
-        img: "images/projects_3.jpg", 
+        img: "images/projects_3.svg", 
         city: "Rostov-on-Don<br>Patriotic",
         area: "92 m2",
         time: "3 months",
